@@ -1,8 +1,72 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgba(128, 128, 128, 0.438);
+  background-image: url("https://media.londolozi.com/wp-content/uploads/2018/02/24164224/5G7A6977-1598x1065.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: cover;
+  
+}
+
+h1 {
+  color: white;
+  font: 34px "Lucida Grande", Helvetica, Arial, sans-serif;
+  animation: fadeIn 1s;
+}
+
+h3 {
+  color: white;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  animation: fadeIn 2s;
 }
 
 a {
-  color: #00B7FF;
+  color: #ff8e25;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-size: 16px;
+  animation: fadeIn 3s;
+}
+
+#delete-form {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+#delete-form button {
+  color: rgb(247, 247, 247);
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: rgb(165, 165, 165);
+  border-color: orange;
+  color: white;
+  animation: fadeIn 3s;
+}
+
+input {
+  animation: fadeIn 3s;
+}
+
+a:hover {
+  color: #000000;
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 72, 72);
+  border-color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
